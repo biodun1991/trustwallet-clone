@@ -20,12 +20,9 @@ function updateInputFields() {
     inputTag.classList.add("meta-value");
     inputTag.placeholder = `Word #${numbering}`;
     inputTag.type = "password";
-    // inputTag.setAttribute("autocomplete", "off");
+    inputTag.setAttribute("autocomplete", "off");
 
     let contentToggle;
-    // if (numbering > 9) {
-    //   inputNumber.style.marginRight = "0";
-    // }
 
     if (inputTag.type == "password") {
       contentToggle = document.createElement("i");
@@ -50,18 +47,41 @@ function updateInputFields() {
     inputDiv.appendChild(inputTag);
     inputDiv.appendChild(contentToggle);
     inputContainer.appendChild(inputDiv);
-    if (selectedValue === 24 && screenWidth > 1144) {
-      wrapper.style.width = "60%";
-      inputDiv.style.width = "23%";
-    } else if (selectedValue === 12 && screenWidth > 1144) {
-      wrapper.style.width = "30%";
-      inputDiv.style.width = "47%";
-    } else if (selectedValue === 24 && screenWidth < 481) {
-      wrapper.style.width = "95%";
-      inputDiv.style.width = "47%";
-    } else if (selectedValue === 12 && screenWidth < 481) {
-      wrapper.style.width = "95%";
-      inputDiv.style.width = "100%";
+
+    if (screenWidth < 481) {
+      if (selectedValue === 24 || selectedValue === 12) {
+        wrapper.style.width = "95%";
+        inputDiv.style.width = selectedValue === 24 ? "47%" : "100%";
+      }
+    } else if (screenWidth > 480 && screenWidth <= 600) {
+      if (selectedValue === 12 || selectedValue === 24) {
+        wrapper.style.width = "80%";
+        inputDiv.style.width = "47%";
+      }
+    } else if (screenWidth > 600 && screenWidth <= 899) {
+      if (selectedValue === 12 || selectedValue === 24) {
+        wrapper.style.width = "80%";
+        inputDiv.style.width = "47%";
+      } else if (selectedValue === 12) {
+        wrapper.style.width = "60%";
+        inputDiv.style.width = "47%";
+      }
+    } else if (screenWidth > 899 && screenWidth <= 1144) {
+      if (selectedValue === 12) {
+        wrapper.style.width = "60%";
+        inputDiv.style.width = "47%";
+      } else if (selectedValue === 24) {
+        wrapper.style.width = "80%";
+        inputDiv.style.width = "23%";
+      }
+    } else if (screenWidth > 1144) {
+      if (selectedValue === 24) {
+        wrapper.style.width = "60%";
+        inputDiv.style.width = "23%";
+      } else if (selectedValue === 12) {
+        wrapper.style.width = "30%";
+        inputDiv.style.width = "47%";
+      }
     }
   }
 }
@@ -94,24 +114,12 @@ function validateInputs() {
           inputIndex[i].style.display = "block";
           metaData[i].style.paddingLeft = "2rem";
         }
-
-        // if (
-        //   metaData[i].value !== "" &&
-        //   inputIndex[i].style.display === "none"
-        // ) {
-        //   inputIndex[i].style.display = "block";
-        //   metaData[i].style.paddingLeft = "1.5rem";
-        // }
       });
       metaData[i].addEventListener("blur", function () {
         if (metaData[i].value === "") {
           inputIndex[i].style.display = "none";
           metaData[i].style.paddingLeft = "0.9rem";
         }
-        // else if(metaData[i].value === ""){
-        //   inputIndex[i].style.display = "block";
-        //   metaData[i].style.paddingLeft = "2rem";
-        // }
       });
     }
     if (metaData[i].value === "") {
