@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: grid;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+header img {
+  width: 5rem;
+}
+
+header select {
+  width: 14rem;
+  border: 1px solid rgb(187, 192, 197);
+  border-radius: 0.3rem;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+section {
+  width: 30%;
+  margin: auto;
+  border: 1px solid rgb(187, 192, 197);
+  min-height: 50vh;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  padding: 2rem 0;
+}
+
+.div-line {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.div-line div {
+  background: rgb(5, 0, 255);
+  width: 45%;
+  height: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+.connect-coin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+/* .connect-coin div:first-child,
+.connect-coin div:last-child {
+} */
+
+.connect-coin div:nth-child(2) {
+  border: none;
+  border-bottom: 0.1rem solid rgba(187, 192, 197, 0.4);
+  width: 55%;
+}
+
+.connect-coin img {
+  border: 1px solid rgb(187, 192, 197);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.connect-coin div:last-child {
+  background: url(images/shield2.webp);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgb(187, 192, 197);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.connect-content {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.connect-content h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.options {
+  padding: 0 2rem;
+  justify-content: ce-between;
+  margin-bottom: 3rem;
+  /* align-items: center; */
+}
+
+.options select {
+  display: block;
+  width: 95%;
+  margin: auto;
+  border-radius: 0.2rem;
+  height: 2.9rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(36, 39, 42);
+  background: rgb(245, 245, 245);
+}
+
+/* option {
+  background-color: lightblue;
+  padding: 2rem 1rem;
+} */
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+  /* border: 1px solid black; */
+}
+
+.input-div {
+  position: relative;
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  /* border: 1px solid black; */
+}
+
+.input-number {
+  position: absolute;
+  left: 0.5rem;
+  margin-right: -1rem;
+  z-index: 5;
+  font-weight: 500;
+  display: none;
+}
+
+input {
+  height: 3rem;
+  width: 100%;
+  padding: 0 2.5rem 0 0.9rem;
+  border-radius: 0.2rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background: rgb(245, 245, 245);
+}
+
+input::placeholder {
+  font-size: 0.98rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+input:focus {
+  border: 1px solid rgb(3, 118, 201);
+}
+
+/* input:focus .input-number {
+  display: block;
+} */
+
+.fa-solid {
+  position: absolute;
+  right: 0.9rem;
+  opacity: 0.4;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.fa-regular {
+  position: absolute;
+  right: 0.9rem;
+  opacity: 0.4;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border: 1px solid rgb(3, 118, 201);
+  color: white;
+  background: rgb(3, 118, 201);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+}

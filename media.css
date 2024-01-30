@@ -1,0 +1,148 @@
+/* @media (max-width: 400px) {
+  header .cover-logo {
+    display: block;
+    background: white;
+    left: 2.9rem;
+    height: 2rem;
+    width: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  header img {
+    width: 7rem;
+  }
+  section {
+    width: 90%;
+  }
+  .connect-coin div:nth-child(2) {
+    width: 40%;
+  }
+
+  .connect-content {
+    width: 90%;
+  }
+
+  .options {
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .options h3 {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .options select {
+    width: 100%;
+  }
+
+  #inputContainer {
+    flex-direction: column;
+  }
+
+  .input-div {
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 638px) {
+  header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  section {
+    width: 85%;
+  }
+  .connect-coin div:nth-child(2) {
+    width: 40%;
+  }
+
+  .connect-content {
+    width: 90%;
+  }
+
+  .options {
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .options h3 {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .options select {
+    width: 100%;
+  }
+
+  #inputContainer {
+    flex-direction: column;
+  }
+
+  .input-div {
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+  }
+}
+
+@media (min-width: 639px) and (max-width: 779px) {
+  header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  section {
+    width: 90%;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 973px) {
+  header {
+    padding: 1rem 3rem;
+  }
+  section {
+    width: 72%;
+  }
+}
+
+@media (min-width: 974px) and (max-width: 1099px) {
+  header {
+    padding: 1rem 4rem;
+  }
+
+  section {
+    width: 63%;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1322px) {
+  header {
+    padding: 1rem 14%;
+  }
+
+  section {
+    width: 53%;
+  }
+}
+
+@media (min-width: 1323px) {
+  section {
+    width: 42%;
+  }
+
+  .options h3 {
+    width: 50%;
+  }
+} */

